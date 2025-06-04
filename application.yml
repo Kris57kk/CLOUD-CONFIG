@@ -18,11 +18,11 @@ spring:
       gateway:
         routes:
           - id: order-service
-            uri: lb://ORDER-SERVICE
+            uri: lb://order-service
             predicates:
               - Path=/orders/**
           - id: product-service
-            uri: lb://PRODUCT-SERVICE
+            uri: lb://product-service
             predicates:
               - Path=/products/**
       discovery: 
